@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+
+.saw {
+  color: gray;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.grid ol {
+  border-right: 1px solid gray;
+  padding: 20px;
+  padding-left: 33px;
+}
+
+.grid .main {
+  padding: 10px 25px;
+}
+
+.grid .main p {
+  padding: 20px 0;
+}
+
+@media(max-width:800px) {
+  .grid {
+    display: block;
+  }
+  .grid ol {
+    border-right: none;
+    padding: 20px;
+    padding-left: 33px;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
