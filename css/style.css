@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  transition: all 0.5s;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -15,6 +19,14 @@ h1 {
   padding: 20px;
 }
 
+h1 a {
+  transition: all 1s;
+}
+
+h1 a:hover {
+  color: aquamarine;
+}
+
 .saw {
   color: gray;
 }
@@ -24,10 +36,9 @@ h1 {
   grid-template-columns: 150px 1fr;
 }
 
-.grid ol {
+.side-menu {
   border-right: 1px solid gray;
-  padding: 20px;
-  padding-left: 33px;
+  padding: 15px;
 }
 
 .grid .main {
@@ -38,16 +49,40 @@ h1 {
   padding: 20px 0;
 }
 
+.side-menu a {
+  transition: all 0.5s;
+}
+
+.side-menu a:hover {
+  color: powderblue;
+}
+
+#night_day {
+  margin-left: 15px;
+  padding: 10px 20px;
+  color: gray;
+  background-color: rgb(4, 243, 127);
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s;
+  margin-bottom: 15px;
+}
+
+#night_day:hover {
+  background-color: rgb(168, 235, 202);
+  color: black;
+}
+
 @media(max-width:800px) {
   .grid {
     display: block;
   }
-  .grid ol {
+  .side-menu {
     border-right: none;
-    padding: 20px;
-    padding-left: 33px;
+    padding: 15px;
   }
   h1 {
     border-bottom: none;
+    transition: all 1s;
   }
 }
